@@ -10,6 +10,7 @@ import { LifecycleHooksComponent } from './lifecycle-hooks/lifecycle-hooks.compo
 import { ParameterPassingComponent } from './parameter-passing/parameter-passing.component';
 import { StylesViewIncapsulationComponent } from './styles-view-incapsulation/styles-view-incapsulation.component';
 import { TransferHtmlToComponentComponent } from './transfer-html-to-component/transfer-html-to-component.component';
+import { ComponentsNavComponent } from './components-nav/components-nav.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TransferHtmlToComponentComponent } from './transfer-html-to-component/t
     LifecycleHooksComponent,
     ParameterPassingComponent,
     StylesViewIncapsulationComponent,
-    TransferHtmlToComponentComponent
+    TransferHtmlToComponentComponent,    
+    ComponentsNavComponent
   ],
   imports: [
     CommonModule,

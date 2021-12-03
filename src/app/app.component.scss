@@ -6,66 +6,25 @@
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
 }
 
-.content {
-display: flex;
-margin: 82px auto 32px;
-padding: 0 16px;
-max-width: 960px;
-flex-direction: column;
-align-items: center;
+
+.aside-menu {
+    border: 1px solid pink;
+    width: 50px;
+    height: calc(100vh - 102px);
+    position: fixed;
+    left: 0;
+    top: 60px;
 }
 
-.card {
-all: unset;
-border-radius: 4px;
-border: 1px solid #eee;
-background-color: #fafafa;
-height: 40px;
-width: 200px;
-margin: 0 8px 16px;
-padding: 16px;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-transition: all 0.2s ease-in-out;
-line-height: 24px;
-}
-
-.card.card-small {
-height: 16px;
-width: 168px;
-}
-
-.card.highlight-card {
-background-color: #1976d2;
-color: white;
-font-weight: 600;
-border: none;
-width: auto;
-min-width: 30%;
-position: relative;
-}
-
-.card.card.highlight-card span {
-margin-left: 60px;
-}
-
-svg#rocket {
-width: 80px;
-position: absolute;
-left: -10px;
-top: -24px;
-}
-
-svg#rocket-smoke {
-height: calc(100vh - 95px);
-position: absolute;
-top: 10px;
-right: 220px;
-z-index: -10;
+.content-component {
+    width: calc(100vw - 120px);
+    height: 100px;
+    border: 1px solid blue;
+    margin-top: 80px;
+    margin-left: 70px;
 }
 
 

@@ -5,16 +5,19 @@ const mainRoutes: Routes = [
   {
     path: 'basic-and-syntax',
     loadChildren: () =>
-      import('./modules/basics-and-syntax/basics-and-syntax.module').then(
-        (m) => m.BasicsAndSyntaxModule
-      ),
+      import('./modules/basics-and-syntax/basics-and-syntax.module').then((m) => m.BasicsAndSyntaxModule),
   },
   {
-    path: 'modules',
+    path: 'components-in-detail',
     loadChildren: () =>
       import(
-        './modules/components-in-detail/components-in-detail.module'
-      ).then((m) => m.ComponentsInDetailModule),
+        './modules/components-in-detail/components-in-detail.module').then((m) => m.ComponentsInDetailModule),
+  },
+  {
+    path: 'directives',
+    loadChildren: () =>
+      import(
+        './modules/directives/directives.module').then((m) => m.DirectivesModule),
   },
   { path: '**', redirectTo: 'basic-and-syntax' },
 ];

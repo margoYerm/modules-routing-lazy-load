@@ -4,15 +4,12 @@ import { ConditionalDisplayNgifElseComponent } from './conditional-display-ngif-
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { BasicsNavComponent } from './basics-nav/basics-nav.component'
 
-const routes: Routes = [
+const routes: Routes = [ 
   {
     path: '',
-    component: NgStyleComponent,
+    component: BasicsNavComponent,
   },
-  {
-    path: '',
-    component: ConditionalDisplayNgifElseComponent,
-  },
+  
 ];
 
 @NgModule({
