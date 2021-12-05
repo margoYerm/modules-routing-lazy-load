@@ -3,11 +3,16 @@ import { RouterModule, Routes } from '@angular/router';
 import { ConditionalDisplayNgifElseComponent } from './conditional-display-ngif-else/conditional-display-ngif-else.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { BasicsNavComponent } from './basics-nav/basics-nav.component'
+import { TemplatesStylesComponent } from './templates-styles/templates-styles.component';
 
 const routes: Routes = [ 
   {
     path: '',
     component: BasicsNavComponent,
+  },
+  {
+    path: 'templates-styles',
+    component: TemplatesStylesComponent,
   },
   
 ];
