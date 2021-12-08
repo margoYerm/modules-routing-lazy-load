@@ -1,19 +1,18 @@
-@import '../../../../assets/scss/variables';
+@import '../../../assets/scss/variables';
 
-.navigation-left {
+.navigation {
     padding: 20px;
     list-style: none;
     display: flex;
-    flex-direction: column;
     border-bottom: 1px solid $tiffany;
     position: fixed;
-    top: 60px;
-    right: 0;
-    width: fit-content;    
+    top: 0;
+    left: 0;
+    width: 100vw;    
     background-color: $extra-light-grey;
     z-index: 10;
     li {
-        padding: 10px;
+        margin-right: 20px;
         a {
             text-decoration: none;
             color: $blue-deep;
@@ -22,12 +21,6 @@
             a {
                 color: $tiffany;
             }
-        }
-        &:hover {
-            a {
-                color: $tiffany;
-            }
-            
         }
     }    
 }

@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BasicsAndSyntaxModule } from './modules/basics-and-syntax/basics-and-syntax.module';
-import { MainNavComponent } from './main-nav/main-nav.component';
+import { MainNavComponent } from './shared/main-nav/main-nav.component';
 import { DirectivesModule } from './modules/directives/directives.module';
 import { ComponentsInDetailModule } from './modules/components-in-detail/components-in-detail.module';
 
