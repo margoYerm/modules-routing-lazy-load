@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoWayBindingComponent implements OnInit {
 
-  constructor() { }
+  title= 'Initial'
 
+  /*This code for implements: constructor and ngOnInit*/
+  constructor() { }
   ngOnInit(): void {
+  }
+
+
+  onInput(event: any) {
+    this.title = event.target.value
   }
 
 }

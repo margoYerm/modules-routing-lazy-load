@@ -12,7 +12,7 @@ import { DynamicClassesNgClassComponent } from './pages/dynamic-classes-ng-class
 import { NgSwitchComponent } from './pages/ng-switch/ng-switch.component';
 import { SeriesNgForComponent } from './pages/series-ng-for/series-ng-for.component';
 import { WhatIsPipesComponent } from './pages/what-is-pipes/what-is-pipes.component';
-
+ 
 const routes: Routes = [ 
   {
     path:'',

@@ -1,1 +1,21 @@
-<p>event-bindings works!</p>
+<main class="all-page">
+    <h2 class="h2">Event Bingings</h2>
+
+    <p>Input text and press Enter button on keyboard</p>
+
+   <div class="input-wrapper">
+       <input type="text"        
+       (keyup.enter) = "onInput($event)"
+       (blur) = "onBlur(myInput.value)"
+       #myInput>
+   </div>
+   <p class="output-wrapper">
+       <strong>{{ inputValue }}</strong>
+   </p>
+
+   <button 
+   class="btn"
+   (click) = "onClick()" >
+   Click me!</button>   
+
+</main>

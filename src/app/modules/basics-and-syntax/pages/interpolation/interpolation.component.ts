@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterpolationComponent implements OnInit {
 
-  constructor() { }
+  title = 'Dynamic Title'
+  number = 22
+  arr = [1, 1, 2, 3, 5, 8]
 
-  ngOnInit(): void {
-  }
-
-}
+  obj = {
+    a: 1,
+    b: {
+      c: 2
+    }
+  } //Angular call .toString for obj  => [object Object]
+  
+  ngOnInit(): void {}
+} 
