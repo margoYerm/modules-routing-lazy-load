@@ -1,1 +1,27 @@
-<p>series-ng-for works!</p>
+<main class="all-page">    
+
+    <h2 class="h2">Циклы с ngFor</h2>    
+
+    <p>series-ng-for works! Lesson 19.</p>
+
+    <ul class="list">
+        <li *ngFor = "let n of arr; let idx = index" class="bgr">
+            {{idx + 1}}: <strong>{{n}} </strong>
+        </li>
+    </ul>
+
+    <ul class="obj-post">
+        <li *ngFor = "let post of obj" class="article-box">
+            <p class="article-title"> {{ post.title }} <b class="article-author"> {{ post.author }} </b></p>
+            <ul class="comments-box">
+                <li *ngFor = "let comment of post.comments">
+                    <div >
+                        <small>{{ comment.name }}</small>
+                        <p>{{comment.text}}</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+       
+</main>

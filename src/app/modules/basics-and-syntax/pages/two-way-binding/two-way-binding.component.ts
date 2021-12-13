@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-two-way-binding',
@@ -7,16 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TwoWayBindingComponent implements OnInit {
 
-  title= 'Initial'
+  title = 'Initial'
 
   /*This code for implements: constructor and ngOnInit*/
   constructor() { }
   ngOnInit(): void {
   }
 
-
-  onInput(event: any) {
-    this.title = event.target.value
+  // onInput(event: any) {
+  //   this.title = event.target.value
+  // }
+  
+  onInput(event: any) {    
+    this.title = (<HTMLInputElement>event.target).value
   }
 
 }

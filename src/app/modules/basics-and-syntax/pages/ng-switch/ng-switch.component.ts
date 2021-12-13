@@ -9,6 +9,8 @@ export class NgSwitchComponent implements OnInit {
 
   constructor() { }
 
+  toggle: any = false
+
   ngOnInit(): void {
   }
 

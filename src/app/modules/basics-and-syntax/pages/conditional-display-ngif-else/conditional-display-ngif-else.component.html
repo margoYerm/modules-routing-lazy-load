@@ -1,5 +1,21 @@
-<br>
-<br>
-<br>
+<main class="all-page">
 
-<p>conditional-display-ngif-else works!</p>
+    <h2 class="h2">Отображение по условию с ngIf else</h2>    
+
+    <p>conditional-display-ngif-else works!  Lesson 17. Display one of two blocks. Ng-templates. To ways.</p>
+
+    <div class="container">
+        <div class="green" *ngIf="toggle"></div>
+        <div class="violet" *ngIf="!toggle"></div>       
+        <button class="btn" (click) = "toggle = !toggle">Toggle</button>
+    </div>
+    
+    <div class="container">        
+        <div class="sunrise" *ngIf="toggle2; else sunsetB"></div>
+        <button class="btn" (click) = "toggle2 = !toggle2">Toggle</button>
+        <ng-template #sunsetB>
+            <div class="sunset"></div>  
+        </ng-template>              
+    </div>    
+       
+</main>

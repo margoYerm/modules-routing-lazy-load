@@ -9,6 +9,9 @@ export class ConditionalDisplayNgifElseComponent implements OnInit {
 
   constructor() { }
 
+  toggle = false
+  toggle2 = false
+
   ngOnInit(): void {
   }
 

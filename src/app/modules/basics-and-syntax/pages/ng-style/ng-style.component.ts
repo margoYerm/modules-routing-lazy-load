@@ -9,6 +9,8 @@ export class NgStyleComponent implements OnInit {
 
   constructor() { }
 
+  backgroundToggle = false
+
   ngOnInit(): void {
   }
 

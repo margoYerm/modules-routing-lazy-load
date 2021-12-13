@@ -9,6 +9,9 @@ export class DynamicClassesNgClassComponent implements OnInit {
 
   constructor() { }
 
+  backgroundToggle = false
+  backgroundSecond = false
+
   ngOnInit(): void {
   }
 

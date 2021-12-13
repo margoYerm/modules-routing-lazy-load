@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
@@ -17,11 +17,13 @@ import { ComponentsInDetailModule } from './modules/components-in-detail/compone
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BasicsAndSyntaxModule,
     DirectivesModule,
     ComponentsInDetailModule,
-    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

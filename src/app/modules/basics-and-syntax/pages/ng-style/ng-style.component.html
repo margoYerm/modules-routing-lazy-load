@@ -1,1 +1,23 @@
-<p>ng-style works!</p>
+<main class="all-page">
+    <h2 class="h2">ngStyle Directive</h2>    
+
+    <p>ng-style works! Draw Sun with ngStyle, 2 way binding, Ternary operator </p>
+
+    <button class="btn" (click)="backgroundToggle = !backgroundToggle">Toggle</button>
+
+    <div [ngStyle]="{
+        width: '200px',
+        height: '200px',
+        borderRadius: '50%',
+        position: 'absolute',      
+        right: '20px',
+        bottom: '10px',
+        boxShadow: '0 0 20px rgba(246, 5, 0, 0.5)',
+        backgroundColor: backgroundToggle ? 'yellow' : 'orange'
+     }"></div>
+
+
+       
+</main>
+
+

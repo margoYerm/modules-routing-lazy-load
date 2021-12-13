@@ -14,6 +14,7 @@ import { TwoWayBindingComponent } from './pages/two-way-binding/two-way-binding.
 import { WhatIsBindingsComponent } from './pages/what-is-bindings/what-is-bindings.component';
 import { WhatIsPipesComponent } from './pages/what-is-pipes/what-is-pipes.component';
 import { BasicsNavComponent } from './bs-shared/basics-nav/basics-nav.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,7 +34,9 @@ import { BasicsNavComponent } from './bs-shared/basics-nav/basics-nav.component'
   ],
   imports: [
     CommonModule,
-    BasicsAndSyntaxRoutingModule
+    BasicsAndSyntaxRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     ConditionalDisplayNgifElseComponent,

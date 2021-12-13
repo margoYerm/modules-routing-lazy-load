@@ -9,6 +9,8 @@ export class WhatIsPipesComponent implements OnInit {
 
   constructor() { }
 
+  now: Date = new Date()
+
   ngOnInit(): void {
   }
 
