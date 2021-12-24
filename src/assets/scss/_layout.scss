@@ -29,6 +29,10 @@ i {
     padding: 10px 0;
 }
 
+hr {
+    margin: 20px 0;
+}
+
 .all-page {    
     width: calc(100vw - 40px - 300px);
     margin-top: 80px;
@@ -37,6 +41,11 @@ i {
     overflow: auto;  
     background-color: $extra-light-grey;  
     padding: 0 10px;
+}
+
+.all-page.components-details {
+    width: calc(100vw - 40px - 315px);
+    margin-top: 55px;
 }
 
 .content-block {} 

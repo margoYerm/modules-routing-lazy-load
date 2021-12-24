@@ -11,6 +11,8 @@ import { ParameterPassingComponent } from './pages/parameter-passing/parameter-p
 import { StylesViewIncapsulationComponent } from './pages/styles-view-incapsulation/styles-view-incapsulation.component';
 import { TransferHtmlToComponentComponent } from './pages/transfer-html-to-component/transfer-html-to-component.component';
 import { ComponentsNavComponent } from './cd-shared/components-nav/components-nav.component';
+import { PostCreateComponentComponent } from './cd-shared/post-create-component/post-create-component.component';
+import { ColoryDirective } from './pages/create-components/colory.directive';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ComponentsNavComponent } from './cd-shared/components-nav/components-na
     ParameterPassingComponent,
     StylesViewIncapsulationComponent,
     TransferHtmlToComponentComponent,    
-    ComponentsNavComponent
+    ComponentsNavComponent,
+    PostCreateComponentComponent,
+    ColoryDirective,
   ],
   imports: [
     CommonModule,

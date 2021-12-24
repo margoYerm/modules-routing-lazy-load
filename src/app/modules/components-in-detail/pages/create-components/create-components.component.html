@@ -1,1 +1,53 @@
-<p>create-components works!</p>
+<main class="all-page components-details">    
+
+    <h2 class="h2">How to create components</h2>    
+
+    <p>create-components works! Lesson 21.</p>    
+
+    <div class="container">
+        <div class="row">
+            <div class="command">
+                ng g c name-for-component
+            </div>
+            <div class="buffer"></div>
+            <div class="description">
+                Create new component in app.module. To create new component in another module type <code>ng g c alias/new-name-module-or-component</code> 
+            </div>
+        </div>   
+        <hr>
+        <div class="row">
+            <div class="command">
+                ng g d nameDirective
+            </div>
+            <div class="buffer"></div>
+            <div class="description">
+                Create new directive in component. 
+            </div>
+        </div>       
+    </div>
+
+    <section class="form">
+        <div class="input-wrapper">
+            <input type="text" placeholder="Title...">
+        </div>
+        <div class="input-wrapper">
+            <input type="text" placeholder="Text...">
+        </div>
+        <button class="btn">Add post</button>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="form">
+        <p appColory #colory="colory">This ts file contains the method, which changing random color on click. Used directive. CLICK ME!!!</p>
+        <button class="btn" (click)="colory.setRandomColor()">Change text color</button>
+    </section>
+
+    <hr>
+
+    <post-create-component></post-create-component>
+    <post-create-component></post-create-component>
+
+    
+</main>
+
